@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="image/logo.ico" type="imagex/png">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>OptimusTech</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="image/logo.ico" type="imagex/png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>OptimusTech</title>
 </head>
 <body>
     <main>
@@ -36,49 +36,62 @@
             </div>
         </header>
 
-        <section id="about">
+        <div class="containerFloating">
+            <a class="linkOne on" onclick="modeDark()">
+                <img class="sun" src="image/sun.png" alt="">
+            </a>
+
+            <a class="linkTwo off" onclick="modeLight()">
+                <img class="moon" src="image/moon.png" alt="">
+            </a>
+        </div>
+
+        <section class="about">
             <h2 class="top">Sobre nós</h2>
             <h1 class="title">Por que somos diferentes?</h1>
-
+            
             <p class="text">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
-
+            
             <div class="info">
-                <article>
+                <article class="cardInfo">
                     <h1>400+</h1>
                     <h2>Projetos concluídos</h2>
                     <p>Nós ajudamos a construir mais de 400 projetos incríveis.</p>
                 </article>
-                <article>
+
+                <article class="cardInfo">
                     <h1>100+</h1>
                     <h2>Colaboradores</h2>
                     <p>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
                 </article>
-                <article>
+
+                <article class="cardInfo">
                     <h1>20k</h1>
                     <h2>Downloads</h2>
                     <p>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
                 </article>
-                <article>
+                
+                <article class="cardInfo">
                     <h1>500+</h1>
                     <h2>Reviews 5 estrelas</h2>
                     <p>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
                 </article>
             </div>
         </section>
-
-        <section id="vacancies">
+        
+        <section class="vacancies">
             <div class="talent">
                 <h2>Vagas abertas!</h2>
                 <h1>Estamos procurando por talentos</h1>
                 <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
                 <img src="image/team.png" alt="">
             </div>
-
+            
             <div class="openVacancies">
                 <article class="design">
                     <h1>Design</h1>
-
-                    <article>
+                    
+                    <article class="cardDesign">
                         <h1>Product Designer</h1>
                         <div class="paragraph">
                             <p>Full-time</p>
@@ -86,7 +99,7 @@
                         </div>
                     </article>
                     
-                    <article>
+                    <article class="cardDesign">
                         <h1>UX Designer</h1>
                         <div class="paragraph">
                             <p>Full-time</p>
@@ -98,7 +111,7 @@
                 <article class="softwareDevelopment">
                     <h1>Desenvolvimento de Software</h1>
 
-                    <article>
+                    <article class="cardSoftware">
                         <h1>Desenvolvedor(a) iOS</h1>
                         <div class="paragraph">
                             <p>Full-time</p>
@@ -106,7 +119,7 @@
                         </div>
                     </article>
                     
-                    <article>
+                    <article class="cardSoftware">
                         <h1>Desenvolvedor(a) Front-end</h1>
                         <div class="paragraph">
                             <p>Full-time</p>
@@ -114,7 +127,7 @@
                         </div>
                     </article>
 
-                    <article>
+                    <article class="cardSoftware">
                         <h1>Desenvolvedor(a) Back-end</h1>
                         <div class="paragraph">
                             <p>Full-time</p>
@@ -125,7 +138,7 @@
             </div>
         </section>
 
-        <section id="colaboradores">
+        <section class="colaboradores">
             <div class="data">
                 <h2>Veja o que nossos colaboradores falam sobre nós</h2>
                 <h1>OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h1>
