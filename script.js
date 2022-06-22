@@ -3,8 +3,9 @@ function modeDark(){
     body.style.background = "var(--color-black)";
     body.style.color = "var(--color-white)";
 
-    const containerFloating = document.getElementsByClassName('containerFloating');
+    const containerFloating = document.querySelector('.containerFloating');
     containerFloating.style.background = "var(--background-floating-on)";
+    containerFloating.style.border = "3px solid black";
 
     const linkOne = document.querySelector("a.linkOne");
     linkOne.classList.add("off");
