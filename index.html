@@ -14,6 +14,34 @@
         <title>OptimusTech</title>
 </head>
 <body>
+    <div class="containerModalLogin">
+        <h1>Entrar</h1>
+
+        <img class="closeOne" src="image/close.png" alt="">
+
+        <input type="email" name="email" placeholder="E-mail" autofocus required>
+        <input type="password" name="password" placeholder="Senha" required>
+
+        <button>Entrar</button>
+        
+        <div>
+            <a href="">Esqueci minha senha</a>
+            <a href="">Ainda não é Cadastrado? Clique aqui!!!</a>
+        </div>
+    </div>
+    
+    <div class="containerModalRegister">
+        <h1>Cadastrar</h1>
+
+        <img class="closeTwo" src="image/close.png" alt="">
+
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="password" name="password" placeholder="Senha">
+        <input type="password" name="password" placeholder="Confirme senha">
+
+        <button>Cadastrar</button>
+    </div>
+
     <main>
         <header>
             <div class="logo">
@@ -31,8 +59,9 @@
             </nav>
 
             <div class="buttons">
-                <button>Entrar</button>
-                <button>Cadastrar</button>
+                <button class="login" onclick="modalLogin()">Entrar</button>
+
+                <button class="register" onclick="modalRegister()">Cadastrar</button>
             </div>
         </header>
 
@@ -151,7 +180,7 @@
         <footer>
             <h1>Acompanhe as nossas oportunidades</h1>
             <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
-            <div class="register">
+            <div class="form">
                 <input type="email" name="email" id="email" placeholder="Seu e-mail"/>
                 <button>Cadastrar</button>
             </div>

@@ -1,3 +1,4 @@
+// Modo noturno ou modo claro
 function modeDark(){
     const body = document.querySelector('body');
     body.style.background = "var(--color-black)";
@@ -29,4 +30,54 @@ function modeLight(){
     const linkTwo = document.querySelector("a.linkTwo");
     linkTwo.classList.add("off");
     linkTwo.classList.remove("on");
+}
+
+//funções para os modais
+const containerModalRegister = document.querySelector(".containerModalRegister");
+const closeRegisterClicked = document.querySelector("img.closeTwo");
+
+function modalRegister(){
+
+    containerModalRegister.style.display = "flex";
+
+    activeBlur();
+}
+
+closeRegisterClicked.addEventListener("click", () => {
+    
+    containerModalRegister.style.display = "none";
+    
+    disableBlur();
+});
+
+const containerModalLogin = document.querySelector(".containerModalLogin");
+const closeLoginClicked = document.querySelector("img.closeOne");
+
+function modalLogin(){
+    
+    containerModalLogin.style.display = "flex";
+    
+    activeBlur();
+}
+
+closeLoginClicked.addEventListener("click", () => {
+
+    containerModalLogin.style.display = "none";
+
+    disableBlur();
+});
+
+function activeBlur(){
+    const body = document.querySelector("body");
+    body.style.overflow = "hidden";
+    const main = document.querySelector("main");
+    main.style.filter = "blur(5px)";
+
+}
+
+function disableBlur(){
+    const body = document.querySelector("body");
+    body.style.overflow = "visible";
+    const main = document.querySelector("main");
+    main.style.filter = "none";
 }
