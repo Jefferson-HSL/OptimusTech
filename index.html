@@ -17,29 +17,30 @@
     <div class="containerModalLogin">
         <h1>Entrar</h1>
 
-        <img class="closeOne" src="image/close.png" alt="">
+        <img class="closeOne" onclick="closeLogin()" src="image/close.png" alt="">
 
         <input type="email" name="email" placeholder="E-mail" autofocus required>
         <input type="password" name="password" placeholder="Senha" required>
 
-        <button>Entrar</button>
+        <button class="buttonLogin">Entrar</button>
         
-        <div>
+        <div class="changes">
             <a href="">Esqueci minha senha</a>
-            <a href="">Ainda não é Cadastrado? Clique aqui!!!</a>
+            <p>Ainda não é Cadastrado? <a href="" onclick="closeLogin(), modalRegister()">Clique aqui!!!</a></p>
         </div>
     </div>
     
     <div class="containerModalRegister">
         <h1>Cadastrar</h1>
 
-        <img class="closeTwo" src="image/close.png" alt="">
+        <img class="closeTwo" onclick="closeRegister()" src="image/close.png" alt="">
 
         <input type="email" name="email" placeholder="E-mail">
+        <input type="email" name="email" placeholder="Confirme E-mail">
         <input type="password" name="password" placeholder="Senha">
         <input type="password" name="password" placeholder="Confirme senha">
 
-        <button>Cadastrar</button>
+        <button class="buttonRegister">Cadastrar</button>
     </div>
 
     <main>
@@ -66,11 +67,11 @@
         </header>
 
         <div class="containerFloating">
-            <a class="linkOne on" onclick="modeDark()">
+            <a class="dark on" onclick="modeDark()">
                 <img class="sun" src="image/sun.png" alt="">
             </a>
 
-            <a class="linkTwo off" onclick="modeLight()">
+            <a class="light off" onclick="modeLight()">
                 <img class="moon" src="image/moon.png" alt="">
             </a>
         </div>

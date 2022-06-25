@@ -8,12 +8,12 @@ function modeDark(){
     containerFloating.style.background = "var(--background-floating-on)";
     containerFloating.style.border = "3px solid black";
 
-    const linkOne = document.querySelector("a.linkOne");
-    linkOne.classList.add("off");
-    linkOne.classList.remove("on");
-    const linkTwo = document.querySelector("a.linkTwo");
-    linkTwo.classList.add("on");
-    linkTwo.classList.remove("off");
+    const dark = document.querySelector("a.dark");
+    dark.classList.add("off");
+    dark.classList.remove("on");
+    const light = document.querySelector("a.light");
+    light.classList.add("on");
+    light.classList.remove("off");
 }
 
 function modeLight(){
@@ -24,12 +24,12 @@ function modeLight(){
     const containerFloating = document.querySelector('.containerFloating');
     containerFloating.style.background = "var(--background-floating-off)";
 
-    const linkOne = document.querySelector("a.linkOne");
-    linkOne.classList.add("on");
-    linkOne.classList.remove("off");
-    const linkTwo = document.querySelector("a.linkTwo");
-    linkTwo.classList.add("off");
-    linkTwo.classList.remove("on");
+    const dark = document.querySelector("a.dark");
+    dark.classList.add("on");
+    dark.classList.remove("off");
+    const light = document.querySelector("a.light");
+    light.classList.add("off");
+    light.classList.remove("on");
 }
 
 //funções para os modais
@@ -43,12 +43,12 @@ function modalRegister(){
     activeBlur();
 }
 
-closeRegisterClicked.addEventListener("click", () => {
+function closeRegister() {
     
     containerModalRegister.style.display = "none";
     
     disableBlur();
-});
+};
 
 const containerModalLogin = document.querySelector(".containerModalLogin");
 const closeLoginClicked = document.querySelector("img.closeOne");
@@ -60,12 +60,12 @@ function modalLogin(){
     activeBlur();
 }
 
-closeLoginClicked.addEventListener("click", () => {
+function closeLogin() {
 
     containerModalLogin.style.display = "none";
 
     disableBlur();
-});
+};
 
 function activeBlur(){
     const body = document.querySelector("body");
