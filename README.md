@@ -9,11 +9,11 @@ Site inteiramente feito com HTML 5, CSS 3 e JavaScript
 
 #Mode Dark
 
-![Website Screenshot](https://github.com/Jefferson-HSL/OptimusTech/blob/master/image/website-image-dark.png)
+![Website Screenshot](https://github.com/Jefferson-HSL/OptimusTech/blob/master/image/website-image-dark.jpg)
 
 #Mode Light
 
-![Website Screenshot](https://github.com/Jefferson-HSL/OptimusTech/blob/master/image/website-image-light.png)
+![Website Screenshot](https://github.com/Jefferson-HSL/OptimusTech/blob/master/image/website-image-light.jpg)
 ## Documentação de cores
 
 | Cor               | Hexadecimal                                                |
