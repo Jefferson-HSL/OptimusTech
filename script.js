@@ -81,3 +81,10 @@ function disableBlur(){
     const main = document.querySelector("main");
     main.style.filter = "none";
 }
+
+var Data = new Date();
+var horas = Data.getHours();
+
+if (horas > 17){
+    modeDark()
+}

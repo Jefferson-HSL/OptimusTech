@@ -115,6 +115,7 @@ ul a{
     align-items: center;
     flex-direction: column;
     background: var(--color-white);
+    color: var(--color-black);
     width: 24rem;
     height: 25rem;
     z-index: 10;
@@ -183,6 +184,7 @@ input{
     align-items: center;
     flex-direction: column;
     background: var(--color-white);
+    color: var(--color-black);
     width: 24rem;
     height: 25rem;
     z-index: 10;
