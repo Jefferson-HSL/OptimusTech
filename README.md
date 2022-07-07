@@ -26,6 +26,7 @@ Site inteiramente feito com HTML 5, CSS 3 e JavaScript
 | Grey three        | ![#D0D5DD](https://via.placeholder.com/10/D0D5DD?text=+) #D0D5DD |
 | Yelow             | ![#FFFF5E](https://via.placeholder.com/10/FFFF5E?text=+) #ffff5E |
 | blue              | ![#62D0FC](https://via.placeholder.com/10/62D0FC?text=+) #62D0FC |
+| red               | ![#8E2424](https://via.placeholder.com/10/8E2424?text=+) #8E2424 |
 
 ## Stack utilizada
 
